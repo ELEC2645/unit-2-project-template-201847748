@@ -1,4 +1,4 @@
-// ELEC2645 Unit 2 Project Template
+// ELEC2645 Unit 2 Project - EEE Study Helper
 // Command Line Application Menu Handling Code
 
 #include <stdio.h>
@@ -74,37 +74,37 @@ static void select_menu_item(int input)
 {
     switch (input) {
         case 1:
-            menu_item_1();
+            menu_item_1();     /* Resistor Colour Code Decoder */
             go_back_to_main();
             break;
         case 2:
-            menu_item_2();
+            menu_item_2();      /* Series / Parallel Resistor Calculator */
             go_back_to_main();
             break;
         case 3:
-            menu_item_3();
+            menu_item_3();     /* RC Circuit Helper */
             go_back_to_main();
             break;
         case 4:
-            menu_item_4();
+            menu_item_4();    /* Unit Converter */
             go_back_to_main();
             break;
         default:
-            printf("Bye!\n");
+            printf("Bye! Good luck with ur studies:)\n");
             exit(0);
     }
 }
 
 static void print_main_menu(void)
 {
-    printf("\n----------- Main menu -----------\n");
+    printf("\n----------- EEE Study Helper -----------\n");
     printf("\n"
            "\t\t\t\t\t\t\n"
-           "\t1. Menu item 1\t\t\n"
-           "\t2. Menu item 2\t\t\n"
-           "\t3. Menu item 3\t\t\n"
-           "\t4. Menu item 4\t\t\n"
-           "\t5. Exit\t\t\t\t\n"
+           "\t1. Resistor Colour Code Decoder\n"
+           "\t2. Series / Parallel Resistor Calculator\n"
+           "\t3. RC Circuit Helper\n"
+           "\t4. Unit Converter \n"
+           "\t5. Exit\n"
            "\t\t\t\t\t\t\n");
     printf("---------------------------------------------\n");
 }

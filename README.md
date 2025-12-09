@@ -1,13 +1,8 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21758362)
-# ELEC2645 Unit 2 Project Template
+# EEE Study Helper - ELEC2645 Unit 2 Project
 
-** PLEASE DELETE THIS README AND REPLACE IT WITH YOUR OWN README.md FILE DESCRIBING YOUR PROJECT **
-
-
-This is the basic code for a command line application which you should use for your Unit 2 project.
-
-The code has separated the menu handling code in `main.c` and the function implementations in `funcs.c`. You should add your code to `funcs.c` (or you can create new files if you wish), and update `main.c` to call your functions from the menu.
-
+This project is a menu-driven command line application for the ELEC2645 module.
+My application is called the EEE Study Helper - a small collection of helpful tools for Electronic and Electrical Engineering students to help them with performing calculations and checking them.
 
 ### 1 Run code
 
@@ -18,9 +13,10 @@ Then run the code with `./main.out`
 
 
 ### 2 The assignment
-
-Please read the assignment brief on the Minerva page for details of what you need to implement. 
-
+1. Resistor Colour Code Decoder
+2. Series/Parallel Resistor Calculator
+3. RC Circuit Helper
+4. Unit converter
 
 
 ### 3 Test command

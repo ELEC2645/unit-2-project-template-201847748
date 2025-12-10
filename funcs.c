@@ -18,7 +18,7 @@ void to_lower_str(char *s)
     }
 }
 
-/* convert the resistor colour to digit 0-9 or -1 if invalid */
+/* this is to convert the resistor colour to digit 0-9 or -1 if invalid */
 int colour_to_digit(char *colour)
 {
     to_lower_str(colour);
@@ -175,7 +175,7 @@ void menu_item_2(void)
         print_resistance_with_prefix(total);
     }
 
-    printf("\nOptional: Ohm's Law current (I = V / R_total)\n");
+    printf("\nOptional: Ohm's Law current (I = V / R_total)\n"); /*optional if the user wants to calculate ohms's law*/
     printf("Enter supply voltage in Volts: ");
     if (scanf("%lf", &supply_voltage) != 1) {
         flush_line();
@@ -260,7 +260,7 @@ void menu_item_3(void)
 }
 
 /* below is the code for menu item 4 */
-/*Unit Converter */
+/*Unit Converter */ /*here I removed the with explanations part as the explanations is not for the fulll code*/
 void menu_item_4(void) 
 {
     int choice;
@@ -273,7 +273,7 @@ void menu_item_4(void)
     printf("4. kOhms / MOhms -> Ohms \n");
     printf("5. mW -> dBm\n");
     printf("6. dBm -> mW\n");
-    printf("Choose option (1-6): ");
+    printf("Choose option (1-6): "); /*menu will be printed on the screen for the user to chose from*/
 
     if (scanf("%d", &choice) != 1){
         flush_line();
@@ -324,7 +324,7 @@ void menu_item_4(void)
         } else {
             printf("Invalid option.\n");
         }
-        printf("Explanations: multiply by 1000 k, 1000000 for M.\n");
+        printf("Explanations: multiply by 1000 k, 1000000 for M.\n"); /*explanations will be printed in the terminal*/
     }
     else if (choice == 5) {
         printf("Enter power in mW: ");
